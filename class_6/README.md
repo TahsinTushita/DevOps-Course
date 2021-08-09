@@ -38,7 +38,7 @@ The Kubernetes cluster consists of 2 main components. They are -
   - **kubelet** - kubelet checks the health of each container in a pod at regular time interval and sends a report to the **kube-apiserver**. The kube-apiserver then stores this data in **etcd**.
   - **kube-proxy** - It's a network proxy that runs on each node.
   - **Container runtime** - It's a software for running containers. Example: Docker.
-  - **Pod** - Pods are a collection of containers. Each VM can have several pods. Here is a detailed description of [Pods](###Pods)
+  - **Pod** - Pods are a collection of containers. Each VM can have several pods. Here is a detailed description of [Pods](#pods)
   - **Container** - Containers are where independent applications or services run.
 
 - **Addons** - Since Kubernetes is not a platform as a service system, it lets the user use addons for some services. One mandatory addon for a Kubernetes cluster is the **cluster DNS** that works as a DNS server.
@@ -46,6 +46,8 @@ The Kubernetes cluster consists of 2 main components. They are -
 - **kubectl** - It's a command line tool for Kubernetes for giving commands to the control plane.
 
 ![Kubernetes Components](./assets/kubernetes_components.png "Kubernetes Components")
+
+<a name="pods"></a>
 
 ## Pods
 
