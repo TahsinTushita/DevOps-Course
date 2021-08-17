@@ -2,7 +2,7 @@
 
 ### EC2
 
-Amazon Elastic Compute Cloud is a web service that works like a Virtual Machine in the cloud. The virtual computing environment that it provides is known as a **Instance**.
+Amazon Elastic Compute Cloud is a web service that works like a Virtual Machine in the cloud. The virtual computing environment that it provides is known as an **Instance**.
 
 ### VPC
 
