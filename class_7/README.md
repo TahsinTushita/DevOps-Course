@@ -10,7 +10,15 @@ Virtual Private Cloud is a virtual network in ones AWS account. It has its own n
 
 ### Subnet
 
-Subnet is a range of IP addresses inside a VPC. The range of a subnet must be a subset of the range of the VPC.
+Subnet is a range of IP addresses inside a VPC. The range of a subnet must be a subset of the range of the VPC. In a subnet, the first 4 and the last IP address is reserved for the following reasons -
+
+- 1st one is the network address.
+- 2nd one is reserved for the VPC router.
+- 3rd one is reserved for the DNS server.
+- 4th one is reserved for future use.
+- Since VPC doesn't allow broadcast, the last IP address is reserved as it is the network broadcast address.
+
+This is why the number of IP addresses we can use in a VPC subnet is always **The number of total available IP adresses - 5**.
 
 ### Route table
 
